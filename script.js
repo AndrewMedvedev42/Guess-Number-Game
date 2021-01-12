@@ -1,5 +1,5 @@
 'use strict';
-
+// HAHAHAHAHA
 let messDoc = document.getElementById("message")
 let unKnownNumber = document.getElementById("unKnownNum")
 let scoreNumber = document.getElementById("score")
