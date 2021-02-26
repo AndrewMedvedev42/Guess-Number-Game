@@ -13,7 +13,7 @@ console.log(randomNum)
 let currentScore = Number(scoreNumber.textContent)
 
 function randomGenerator(){
-    randomNum = Math.trunc( Math.random()*50)
+    randomNum = Math.trunc( Math.random()*20)
     return randomNum
 };
 // ----------------------------------------------------
