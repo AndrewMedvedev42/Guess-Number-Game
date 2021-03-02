@@ -9,7 +9,7 @@ let BodyStruct = document.getElementById("body")
 let againBtn = document.getElementById("again")
 let highScore = document.getElementById("highscore")
 let randomNum = Math.trunc( Math.random()*50)
-console.log(randomNum)
+
 let currentScore = Number(scoreNumber.textContent)
 
 function randomGenerator(){
@@ -17,7 +17,7 @@ function randomGenerator(){
     return randomNum
 };
 // ----------------------------------------------------
-function scoreMinus (number){
+function scoreMinus (){
             currentScore  -= 1
             return currentScore
 };
@@ -29,16 +29,19 @@ function whenPress(){
         console.log("No Number")
     } else {
         if(inputField.value > randomNum){
+
             messDoc.textContent = "Too big."
             BodyStruct.style.backgroundColor = "#660000"
-
             scoreNumber.textContent = scoreMinus()
+
         } else if(inputField.value < randomNum){
+
             messDoc.textContent = "Too small."
             BodyStruct.style.backgroundColor = "#660000"
-
             scoreNumber.textContent = scoreMinus()
+
         } else{
+
             unKnownNumber.textContent = randomNum
             messDoc.textContent = "Congratulations"
             BodyStruct.style.backgroundColor = "#00b300"
@@ -55,7 +58,9 @@ function gameRefresher(){
     unKnownNumber.textContent = "?"
     BodyStruct.style.backgroundColor = "#222"
     randomGenerator()
-    console.log(randomNum)
+    scoreNumber.textContent = 20
+    console.log(`Score at the start: ${scoreNumber.textContent}`)
+    console.log(`New number is: ${randomNum}`)
 
 }
 
