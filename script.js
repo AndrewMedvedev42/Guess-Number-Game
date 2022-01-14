@@ -13,7 +13,7 @@ let randomNum = Math.trunc( Math.random()*50)
 let currentScore = Number(scoreNumber.textContent)
 
 function randomGenerator(){
-    randomNum = Math.trunc( Math.random()*20)
+    randomNum = Math.trunc( Math.random()*50)
     return randomNum
 };
 // ----------------------------------------------------
@@ -58,7 +58,7 @@ function gameRefresher(){
     unKnownNumber.textContent = "?"
     BodyStruct.style.backgroundColor = "#222"
     randomGenerator()
-    scoreNumber.textContent = 20
+    scoreNumber.textContent = 50
     console.log(`Score at the start: ${scoreNumber.textContent}`)
     console.log(`New number is: ${randomNum}`)
 
